@@ -1,0 +1,224 @@
+/* General body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7; /* Light grey background for the body */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3a3a3a; /* Deep grey for navbar */
+    padding: 20px 40px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.navbar .logo h1 {
+    font-size: 28px;
+    font-family: 'Merriweather', serif;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #d4af37; /* Gold color on hover */
+}
+
+/* Main Home Section */
+#home {
+    background-color: #2d87f0; /* Blue background for the home section */
+    color: white;
+    text-align: center;
+    padding: 80px 50px;
+}
+
+#home h2 {
+    font-size: 42px;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#home p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+/* Intro Section */
+.intro-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Vertically align the content */
+    padding: 60px 30px;
+    background-color: #ffffff; /* White background for a clean look */
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow for a premium feel */
+    margin: 40px 0;
+    transition: all 0.3s ease;
+}
+
+.intro-container:hover {
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover for emphasis */
+}
+
+.intro-text {
+    flex: 1;
+    padding-right: 40px; /* Increased padding for better spacing */
+    color: #333; /* Dark text for better contrast */
+}
+
+.intro-text h2 {
+    font-size: 36px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #3a3a3a; /* Darker color for title */
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.intro-text p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.intro-image {
+    flex: 1;
+    padding-left: 40px; /* Increased padding for better spacing */
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 15px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for the image */
+}
+
+/* Optional: Add a hover effect to the image to make it feel interactive */
+.intro-image img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+
+/* Button Style */
+.btn {
+    padding: 12px 30px;
+    background-color: #000000; /* Premium black background */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    font-weight: 600; /* Make the text slightly bolder */
+}
+
+.btn:hover {
+    background-color: #333333; /* Slightly lighter black on hover for depth */
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.5); /* Premium gold shadow on hover */
+    transform: translateY(-3px); /* Subtle lift effect on hover */
+}
+
+
+/* Use Cases Section */
+#template {
+    background-color: #f7c5a4; /* Soft warm beige color */
+    text-align: center;
+    padding: 60px 20px;
+    color: #333;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.uses {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    background-color: #f7c5a4; /* Same color as the parent container */
+    padding: 40px 0;
+}
+
+.use {
+    background-color: #fff;
+    padding: 35px;
+    width: 270px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.use h3 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.use p {
+    font-size: 16px;
+    color: #666;
+}
+
+.use:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #3a3a3a; /* Deep grey footer */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+}
+
+footer p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 18px;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #d4af37; /* Gold color on hover */
+}

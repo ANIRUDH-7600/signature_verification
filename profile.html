@@ -1,0 +1,43 @@
+<!-- 
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>User Profile</title>
+          <link rel="stylesheet" href="profile.css">
+      </head>
+      <body>
+          <div class="profile-container">
+              <h2>Welcome to your Profile</h2>
+              <div class="user-info">
+                  <p><strong>Username:</strong> <span id="username">Loading...</span></p>
+                  <p><strong>Name:</strong> <span id="name">Loading...</span></p>
+                  <p><strong>Email:</strong> <span id="email">Loading...</span></p>
+                  <p><strong>Age:</strong> <span id="age">Loading...</span></p>
+              </div>
+              <div class="logout">
+                  <a href="/logout">Logout</a>
+              </div>
+          </div>
+      
+          <script>
+              // Fetch user data from the server
+              fetch('/profile')
+                  .then(response => response.json())
+                  .then(data => {
+                      // Populate the profile fields with the user data
+                      document.getElementById('username').textContent = data.username;
+                      document.getElementById('name').textContent = data.name;
+                      document.getElementById('email').textContent = data.email;
+                      document.getElementById('age').textContent = data.age;
+                  })
+                  .catch(error => {
+                      console.error('Error fetching user data:', error);
+                      // Handle error appropriately
+                      alert('Error fetching profile data');
+                  });
+          </script>
+      </body>
+      </html>
+       -->

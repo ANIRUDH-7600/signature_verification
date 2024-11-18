@@ -1,0 +1,12 @@
+// app.post('/logout', (req, res) => {
+//     res.cookie("token", "", {
+//         httpOnly: true,
+//         expires: new Date(0) // Set the cookie to expire immediately
+//     });
+//     res.redirect("/login"); // Redirect to the login page after logout
+// });
+// <div class="logout">
+//     <form action="/logout" method="POST">
+//         <button type="submit" class="btn btn-danger">Logout</button>
+//     </form>
+// </div>

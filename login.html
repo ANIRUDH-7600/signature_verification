@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Verification - Login</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="form-container">
+            <div class="title">Log In</div>
+            <form class="form" action="/login" method="post">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="forgot">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="sign">Log In</button>
+            </form>
+            <div class="social-message">
+                <div class="line"></div>
+                <div class="message">or sign in with</div>
+                <div class="line"></div>
+            </div>
+            <div class="social-icons">
+                <button class="icon"><i class="fab fa-google"></i></button>
+                <button class="icon"><i class="fab fa-facebook"></i></button>
+            </div>
+            <div class="signup">Don't have an account? <a href="./sign.html">Sign up</a></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
